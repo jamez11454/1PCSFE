@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+}
+.container {
+    min-width: 960px;
+}
+/* logo positioning */
+.logo {
+    width: 100%;
+}
+.information {
+    background-color:#ffffff; 
+    width: 36.4%; 
+    display: inline-block; 
+    margin: 0; 
+    padding: 0; 
+    float:left;
+}
+.information-wrapper {
+    padding: 6.8% 15%;
+}
+/* Heading and navigation */
+.heading {
+    background-image: url("img/heading.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 63.6%; 
+    height: 100%; 
+    display: inline-block; 
+    margin: 0;
+    padding: 0; 
+    float: right;
+}
+/* burger button */
+label {
+    float: right;
+    font-size: 60px;
+    color: #ffffff;
+    padding: 5% 10% 0 0;
+    display: none;
+}
+#burger-button {
+    display: none;
+}
+
+
+.navbar-wrapper {
+    text-align: center;
+}
+.navbar {
+    list-style: none;
+    display: inline-flex;
+    margin-block-start: 0;
+}
+.navbar ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
+}
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar-option {
+    padding: 3em 1rem 1em 1rem;
+    font-weight: 800;
+    margin-block-start: 1rem;
+    color: #ffffff;
+    font-size: 20px;
+}
+.seperator {
+    font-size: 14px;
+    padding-top: 4.5em;
+}
+
+.distinct {
+    background-color: #185F7D;
+    margin-block-start: 0;
+    padding-top: 5rem;
+    padding-right: 0px;
+    font-size: 16px;
+}
+#book-a-quote {
+    padding-right: 20px;
+
+}
+#contact-us {
+    padding-right: 15px;
+}
+
+/* Excerpt */
+.excerpt {
+    padding-top: 5rem;
+    font-size: 22px;
+}
+.excerpt p {
+    color: grey;
+    font-size: 19px;
+}
+.excerpt-link {
+    padding: 1.5rem 0rem;
+}
+.excerpt-link-box {
+    background-color: #185F7D;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1em 0.5em 1em 2em;
+}
+.excerpt-link-text {
+    display: inline-block;
+    font-weight: 800;
+}
+.information-image{
+    bottom: 0;
+}
+.information-image img{
+    width: 100%;
+    bottom: 0;
+}
+@media only screen and (max-width: 1200px) {
+    .navbar-option {
+        padding: 3em 0.5rem 1em 0.5rem;
+        font-weight: 800;
+        margin-block-start: 1rem;
+        color: #ffffff;
+    }
+    .distinct {
+        margin-block-start: 0;
+        padding-top: 5rem;
+    }
+    .seperator {
+        padding-top: 4.5em;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+
+}
+@media only screen and (max-width: 960px) {
+    .information {
+    width: 30%; 
+    }
+    .heading {
+        width: 70%;
+    }
+    .information-wrapper {
+        padding: 15% 5%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .logo img {
+        max-width: 250px;
+    }
+    .information-image img{
+        width: 100%;
+        bottom: 0;
+    }
+}
+@media only screen and ( max-width :600px) {
+    .logo {
+        position: absolute;
+        top: 4%;
+        width: 50%;
+    }
+    .container {
+        min-width: 584px;
+    }
+    .information {
+        width: 100%;
+        float: none;
+    }
+    .heading {
+        width: 100%;
+        float: none;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        display: block;
+        width: 50%;
+        float: right;
+        height: 100%;
+
+    }
+    .navbar-option {
+        padding: 1em 1rem 0 1rem;
+        font-weight: 800;
+        margin-block-start: 3rem;
+        font-size: 14px;
+    }
+    .distinct {
+        background-color: transparent;
+        margin-block-start: 3rem;
+        padding: 1em 1rem 0 1rem;
+        font-size: 14px;
+    }
+    .navbar-wrapper {
+        height: 100%;
+        width: 50%;
+        float: right;
+
+    }
+    .navbar a {
+        color: white;
+    }
+    .navbar-menu {
+        display: none;
+        height: 100%;
+    }
+    .seperator {
+        display: none;
+    }
+    #burger-button:checked + .navbar-menu {
+        display: block;
+        background-color: #185F7D;
+    }
+    
+    #plus-booking {
+        display: none;
+    }
+    .excerpt {
+        padding-top: 0;
+    }
+
+}
