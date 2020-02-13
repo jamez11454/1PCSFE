@@ -36,7 +36,7 @@ label {
     float: right;
     font-size: 60px;
     color: #ffffff;
-    padding: 5% 10% 0 0;
+    padding: 10% 10% 0 0;
     display: none;
 }
 #burger-button {
@@ -112,6 +112,7 @@ label {
 .excerpt-link-text {
     display: inline-block;
     font-weight: 800;
+    padding-left: 5px;
 }
 .information-image{
     bottom: 0;
@@ -178,6 +179,9 @@ label {
     .information {
         width: 100%;
         float: none;
+    }
+    .information-wrapper {
+        padding-top: 5%;
     }
     .heading {
         width: 100%;
